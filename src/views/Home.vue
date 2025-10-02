@@ -44,6 +44,22 @@ export default {
   margin-bottom: 10px;
 }
 
+.hero h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;  
+}
+
+.hero h2::after {
+  content: "";
+  display: block;
+  width: 50px;           /* aláhúzás hossza */
+  height: 3px;           /* vonal vastagsága */
+  background-color: #0ab8b8; /* kékes szín, illik a gombhoz */
+  margin-top: 5px;       /* távolság a szöveg alatt */
+  border-radius: 2px;    /* lekerekített végek */
+}
+
 .hero p {
   font-size: 1rem;
   margin-bottom: 20px;

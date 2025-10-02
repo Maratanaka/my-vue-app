@@ -79,4 +79,10 @@ export default {
   border: 3px solid #f1f1f1; /* opcionális keret */
 }
 
+@media (min-width: 768px) {
+  .hero {
+    padding: 0; /* nagyobb kijelzőn ne legyen plusz padding */
+  }
+}
+
 </style>

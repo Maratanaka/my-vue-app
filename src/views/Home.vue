@@ -81,7 +81,7 @@ export default {
 
 @media (min-width: 768px) {
   .home-page {
-    padding: 40px 0; /* nagyobb kijelzőn ne legyen plusz padding */
+    padding: 10px 0; /* nagyobb kijelzőn ne legyen plusz padding */
   }
 }
 

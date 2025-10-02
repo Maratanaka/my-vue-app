@@ -10,6 +10,10 @@
              elit. Eum quas magnam, dolore officia adipisci
               autem, animi fugit iure ducimus fuga blanditiis!
                Explicabo assumenda atque maxime commodi dolorum
+                vitae laborum enim! Lorem ipsum dolor sit, amet consectetur adipisicing
+             elit. Eum quas magnam, dolore officia adipisci
+              autem, animi fugit iure ducimus fuga blanditiis!
+               Explicabo assumenda atque maxime commodi dolorum
                 vitae laborum enim!</p>
       <div class="buttons">
         <button @click="$router.push('/projects')">Projects</button>
@@ -41,7 +45,7 @@ export default {
 
 .hero h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .hero h2 {
@@ -60,8 +64,9 @@ export default {
   border-radius: 2px;    /* lekerekített végek */
 }
 
-.hero p {
+.hero > p {
   font-size: 1rem;
+  margin-top: 5px;
   margin-bottom: 20px;
 }
 

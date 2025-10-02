@@ -13,7 +13,7 @@
                 vitae laborum enim!</p>
       <div class="buttons">
         <button @click="$router.push('/projects')">Projects</button>
-        <button @click="$router.push('/contact')">Contact</button>
+        
       </div>
     </div>
   </div>

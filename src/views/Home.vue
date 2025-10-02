@@ -27,21 +27,17 @@ export default {
 
 <style scoped>
 .home-page {
-  display: flex;
-  justify-content: center; /* vízszintesen középre */
-  align-items: center;     /* függőlegesen középre */
-  min-height: calc(100vh - 60px); /* a header magasságát levonjuk */
-  background-color: #1f1f1f; /* sötétszürke háttér */
+  background-color: #1f1f1f;
   color: #f1f1f1;
-  padding: 20px;
+  padding: 80px 20px 20px 20px; /* 80px top a header miatt */
+}
+.hero {
+  max-width: 450px;
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
 }
 
-.hero {
-  max-width: 450px;   /* ne legyen túl széles */
-  width: 100%;
-  text-align: left;   /* alapból minden szöveg balra */
-  margin: 0 auto;     /* a teljes hero középre kerül */
-}
 
 .hero h1 {
   font-size: 2.5rem;

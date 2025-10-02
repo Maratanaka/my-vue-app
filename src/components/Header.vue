@@ -79,7 +79,7 @@ html { scroll-behavior: smooth; }
     
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 1s ease;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }

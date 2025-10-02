@@ -53,11 +53,17 @@ export default {
   margin-bottom: 20px;
 }
 
+.hero .buttons {
+  display: flex;
+  justify-content: center; /* gombok középre */
+  margin-top: 20px;
+}
+
 .hero .buttons button {
   margin: 0 10px;
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #444;
+  background-color: #0ab8b8;
   color: #f1f1f1;
   border: none;
   border-radius: 5px;
@@ -66,7 +72,7 @@ export default {
 }
 
 .hero .buttons button:hover {
-  background-color: #666;
+  background-color: #0d6c7a;
 }
 
 .profile-pic {
@@ -78,6 +84,11 @@ export default {
   margin: 20px auto;     /* térköz a szöveg és gombok között */
   border: 3px solid #f1f1f1; /* opcionális keret */
 }
+
+
+
+
+
 
 @media (min-width: 768px) {
   .hero {

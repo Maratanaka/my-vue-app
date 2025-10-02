@@ -40,9 +40,7 @@ export default {
   max-width: 450px;   /* ne legyen túl széles */
   width: 100%;
   text-align: left;   /* alapból minden szöveg balra */
-  margin: 0 auto;   
-  padding: 0 16px;
-  box-sizing: border-box;  /* a teljes hero középre kerül */
+  margin: 0 auto;     /* a teljes hero középre kerül */
 }
 
 .hero h1 {
@@ -83,7 +81,7 @@ export default {
 
 @media (min-width: 768px) {
   .hero {
-    padding: 0; /* nagyobb kijelzőn ne legyen plusz padding */
+    padding: 0 20px; /* nagyobb kijelzőn ne legyen plusz padding */
   }
 }
 

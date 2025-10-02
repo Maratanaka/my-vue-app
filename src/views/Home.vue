@@ -81,7 +81,7 @@ export default {
 
 @media (min-width: 768px) {
   .hero {
-    padding: 0 40px; /* nagyobb kijelzőn ne legyen plusz padding */
+    padding: 0 50px; /* nagyobb kijelzőn ne legyen plusz padding */
   }
 }
 

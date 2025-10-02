@@ -33,7 +33,7 @@ export default {
   min-height: calc(100vh - 60px); /* a header magasságát levonjuk */
   background-color: #1f1f1f; /* sötétszürke háttér */
   color: #f1f1f1;
-  padding: 10px;
+  padding: 20px;
 }
 
 .hero {
@@ -80,8 +80,8 @@ export default {
 }
 
 @media (min-width: 768px) {
-  .hero {
-    padding: 0; /* nagyobb kijelzőn ne legyen plusz padding */
+  .home-page {
+    padding: 40px 0; /* nagyobb kijelzőn ne legyen plusz padding */
   }
 }
 

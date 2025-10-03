@@ -1,13 +1,13 @@
 .coffee-animation .container {
   height: 200px;
   width: 200px;
-  margin: 0 auto; /* középre a szöveg között */
+  margin: 0 auto;
 }
 
 .coffee-animation .coffee-scale {
-  transform: scale(0.6); /* 60%-ra kicsinyítve */
-  transform-origin: top center; /* fentről középre igazítva zsugorodik */
-  margin-top: -50px; /* feljebb húzva */
+  transform: scale(0.6);
+  transform-origin: top center;
+  margin-top: -80px;
 }
 
 /* Upper */
@@ -160,7 +160,7 @@
   position: relative;
   margin: auto;
   bottom: 3px;
-  animation: pour 6s 4s infinite;
+  animation: pour 6s 2s infinite;
 }
 
 /* Steam */
@@ -172,7 +172,7 @@
   position: relative;
   margin: auto;
   top: 50px;
-  animation: rise-steam 4s 5s infinite;
+  animation: rise-steam 4s 3s infinite;
 }
 
 .coffee-animation .steam:before {
@@ -194,7 +194,7 @@
   position: relative;
   bottom: 43px;
   left: 18px;
-  animation: drop 3s 6.1s infinite;
+  animation: drop 3s 5s infinite;
 }
 
 /* Back & Cup */
@@ -306,7 +306,9 @@
 
 /* Keyframes */
 @keyframes spin {
+  0% { transform: translateX(0) rotateY(0deg); }
   50% { transform: translateX(-102px) rotateY(-180deg); }
+  100% { transform: translateX(0) rotateY(0deg); }
 }
 
 @keyframes pour {

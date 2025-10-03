@@ -1,10 +1,10 @@
 <template>
   <header class="site-header">
     <div class="container header-inner">
-        <div class="brand">
+        <router-link to="/" class="brand">
         <img src="@/assets/buddha-india-landmark-svgrepo-com.png" alt="Logo" class="logo"/>
         Martin Tokes
-        </div>
+      </router-link>
 
       <div class="hamburger" :class="{ open: isMenuOpen }" @click="toggleMenu">
         <span></span>
@@ -65,7 +65,7 @@ html { scroll-behavior: smooth; }
 
 .header-inner nav a { margin-left: 18px; color: #ffffff; text-decoration: none; line-height: 1; }
 
-.brand { font-weight: 700; line-height: 1; display: flex; align-items: center; }
+.brand { font-weight: 700; line-height: 1; display: flex; align-items: center; color: #ffffff; text-decoration: none; font-size: 1.2rem; }
 
 .brand .logo { height: 30px; width: 30px; margin-right: 10px; object-fit: contain; }
 

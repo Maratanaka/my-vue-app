@@ -54,7 +54,7 @@ html { scroll-behavior: smooth; }
   position: fixed;
   top: 0;
   left: 0;
-  width: 95%;
+  width: 90%;
    background-color: rgba(31, 31, 31, 0.7); /* áttetsző fekete */
   backdrop-filter: blur(10px); /* opcionális: enyhe elmosás a tartalom mögött */
   z-index: 1000;

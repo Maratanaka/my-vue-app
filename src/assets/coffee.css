@@ -7,7 +7,7 @@
 .coffee-animation .coffee-scale {
   transform: scale(0.6);
   transform-origin: top center;
-  margin-top: -80px;
+  
 }
 
 /* Upper */

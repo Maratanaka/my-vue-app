@@ -1,42 +1,79 @@
 <template>
   <div class="home-page">
     <div class="hero">
-      <h1>Martin Tokes</h1>
-      <p>Developer / Designer / Student</p>
-
-      <img src="@/assets/IMG_3947.jpg" alt="Profilkép" class="profile-pic" />
-        <h2>Skills</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-             elit. Eum quas magnam, dolore officia adipisci
-              autem, animi fugit iure ducimus fuga blanditiis!
-               Explicabo assumenda atque maxime commodi dolorum
-                vitae laborum enim! Lorem ipsum dolor sit, amet consectetur adipisicing
-             elit. Eum quas magnam, dolore officia adipisci
-              autem, animi fugit iure ducimus fuga blanditiis!
-               Explicabo assumenda atque maxime commodi dolorum
-                vitae laborum enim!</p>
-      <div class="buttons">
-        <button @click="$router.push('/projects')">Projects</button>
-        
+  <!-- Kávéfőző animáció -->
+  <div class="coffee-animation">
+    <div class="coffee-scale">
+      <div class="container">
+        <div class="upper">
+          <div class="timer"></div>
+          <div class="upper-btn"></div>
+        </div>
+        <div class="filter">
+          <div class="filter-base"></div>
+          <div class="handle"></div>
+          <div class="coffee"></div>
+          <div class="steam"></div>
+          <div class="coffee-drop"></div>
+        </div>
+        <div class="back">
+          <div class="tray"></div>
+          <div class="cup"></div>
+        </div>
+        <div class="lower">
+          <div class="lower-btn"></div>
+        </div>
       </div>
     </div>
+  </div>
+  <!-- /Kávéfőző animáció -->
+
+  <!-- Új wrapper -->
+  <div class="intro">
+    <div class="intro-text">
+      <h1>Martin Tokes</h1>
+      <p>Developer / Designer / Student</p>
+    </div>
+    <img src="@/assets/IMG_3947.jpg" alt="Profilkép" class="profile-pic" />
+  </div>
+
+  <h2>Skills</h2>
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quas magnam,
+    dolore officia adipisci autem, animi fugit iure ducimus fuga blanditiis!
+    Explicabo assumenda atque maxime commodi dolorum vitae laborum enim!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quas magnam,
+    dolore officia adipisci autem, animi fugit iure ducimus fuga blanditiis!
+    Explicabo assumenda atque maxime commodi dolorum vitae laborum enim!
+  </p>
+
+  <div class="buttons">
+    <button @click="$router.push('/projects')">Projects</button>
+  </div>
+</div>
+
   </div>
 </template>
 
 <script>
+
+import "@/assets/coffee.css";
+
 export default {
   name: 'Home'
 }
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 .home-page {
   background-color: #1f1f1f;
   color: #f1f1f1;
   padding: 80px 20px 20px 20px; /* 80px top a header miatt */
+   font-family: "Exo 2", sans-serif;
 }
 .hero {
-  max-width: 450px;
+  max-width: 500px;
   width: 100%;
   text-align: left;
   margin: 0 auto;
@@ -103,6 +140,35 @@ export default {
 }
 
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    flex-direction: row;         /* egymás mellé kerül */
+    justify-content: center;
+    text-align: left;
+  }
+
+  .intro-text {
+    margin-right: 2rem;          /* szöveg és kép között hely */
+  }
+}
 
 
 
@@ -112,5 +178,7 @@ export default {
     padding: 0 50px; /* nagyobb kijelzőn ne legyen plusz padding */
   }
 }
+
+
 
 </style>

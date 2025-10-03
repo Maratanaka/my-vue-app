@@ -51,6 +51,7 @@ html { scroll-behavior: smooth; }
   height: 60px;
   display: flex;
   align-items: center;
+   font-family: "Exo 2", sans-serif;
 }
 
 .header-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }

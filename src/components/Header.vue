@@ -46,12 +46,19 @@ html { scroll-behavior: smooth; }
 
 .site-header {
   background: #1f1f1f;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
   padding: 0 20px;
   height: 60px;
   display: flex;
   align-items: center;
    font-family: "Exo 2", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97%;
+   background-color: rgba(31, 31, 31, 0.7); /* áttetsző fekete */
+  backdrop-filter: blur(10px); /* opcionális: enyhe elmosás a tartalom mögött */
+  z-index: 1000;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
 }
 
 .header-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }

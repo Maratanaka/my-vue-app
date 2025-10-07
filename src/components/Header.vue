@@ -3,7 +3,7 @@
     <div class="container header-inner">
         <router-link to="/" class="brand">
         <img src="@/assets/buddha-india-landmark-svgrepo-com.png" alt="Logo" class="logo"/>
-        Martin Tokes
+        Zen Coding
       </router-link>
 
       <div class="hamburger" :class="{ open: isMenuOpen }" @click="toggleMenu">

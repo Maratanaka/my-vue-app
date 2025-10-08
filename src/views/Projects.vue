@@ -31,10 +31,10 @@ export default {
   data() {
     return {
       projects: [
-        { title: "Spiral Hub", description: "UX/UI projektek megosztása egymással.", image: "src/assets/SpiralMainPaig.png" },
-        { title: "Csillagos Égbolt", description: "Rövid leírás a projektről.", image: "src/assets/space.png" },
-        { title: "Login/Regist", description: "Rövid leírás a projektről.", image: "src/assets/LoginRegist.png" },
-        { title: "Projekt 4", description: "Rövid leírás a projektről.", image: "/images/projekt4.jpg" },
+        { title: "Spiral Hub", description: "UX/UI projektek megosztása egymással.", image: "/images/SpiralMainPaig.png" },
+        { title: "Csillagos Égbolt", description: "Rövid leírás a projektről.", image: "/images/space.png" },
+        { title: "Login/Regist", description: "Rövid leírás a projektről.", image: "/images/LoginRegist.png" },
+        { title: "Projekt 4", description: "Rövid leírás a projektről.", image: "/images/space.png" },
       ],
     };
   },

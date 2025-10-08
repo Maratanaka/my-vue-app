@@ -127,7 +127,7 @@ export default {
   }
 
   .card {
-    width: 90%;
+    
     max-width: 320px;
   }
 }

@@ -118,6 +118,7 @@ export default {
   }
 
   .card {
+    width: 90%; /* a képernyő szélességéhez igazodik */
     max-width: 320px;
   }
 }

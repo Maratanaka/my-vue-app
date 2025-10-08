@@ -31,9 +31,9 @@ export default {
   data() {
     return {
       projects: [
-        { title: "Spiral Hub", description: "UX/UI projektek megosztása egymással.", image: "/images/SpiralMainPaig.png" },
-        { title: "Csillagos Égbolt", description: "Rövid leírás a projektről.", image: "/images/space.png" },
-        { title: "Login/Regist", description: "Rövid leírás a projektről.", image: "/images/LoginRegist.png" },
+        { title: "Spiral Hub", description: "UX/UI projektek megosztása egymással.", image: "src/assets/SpiralMainPaig.png" },
+        { title: "Csillagos Égbolt", description: "Rövid leírás a projektről.", image: "src/assets/space.png" },
+        { title: "Login/Regist", description: "Rövid leírás a projektről.", image: "src/assets/LoginRegist.png" },
         { title: "Projekt 4", description: "Rövid leírás a projektről.", image: "/images/projekt4.jpg" },
       ],
     };
@@ -90,9 +90,10 @@ export default {
 
 .card {
   width: 300px;
-  height: 300px;
-  background-color: rgba(57, 52, 52, 0.7);
-  backdrop-filter: blur(10px);
+  height: 300px; /* kicsit nagyobb, hogy elférjen a kép */
+  
+  background-color: rgba(57, 52, 52, 0.7); /* áttetsző fekete */
+  backdrop-filter: blur(10px); /* opcionális: enyhe elmosás a tartalom mögött */
   color: white;
   padding: 20px;
   transition: transform 0.1s ease-out;

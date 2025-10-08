@@ -60,6 +60,8 @@ export default {
 </script>
 
 <style>
+
+
 .project-page {
   background-color: #1f1f1f;
   color: #f1f1f1;
@@ -86,6 +88,7 @@ export default {
   perspective: 1000px;
   text-align: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 100%;
 }
 
 .card {
@@ -111,16 +114,23 @@ export default {
 }
 
 @media (max-width: 768px) {
+  .project-page {
+    padding: 60px 10px 20px 10px; /* kevesebb padding, hogy ne tolja el */
+  }
+
   .card-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* ⬅️ ez középre hozza a kártyákat mobilon */
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden; /* biztos, ami biztos */
   }
 
   .card {
-    width: 90%; /* a képernyő szélességéhez igazodik */
+    width: 90%;
     max-width: 320px;
   }
 }
+
 
 </style>

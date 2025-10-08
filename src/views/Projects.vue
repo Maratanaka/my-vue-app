@@ -115,7 +115,7 @@ export default {
 
 @media (max-width: 768px) {
   .project-page {
-    padding: 60px 10px 20px 10px; /* kevesebb padding, hogy ne tolja el */
+    padding: 30px 1px 20px 1px; /* kevesebb padding, hogy ne tolja el */
   }
 
   .card-container {

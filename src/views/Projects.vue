@@ -86,7 +86,6 @@ export default {
   perspective: 1000px;
   text-align: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-content: center;
 }
 
 .card {
@@ -110,4 +109,17 @@ export default {
   border-radius: 8px;
   margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ⬅️ ez középre hozza a kártyákat mobilon */
+  }
+
+  .card {
+    max-width: 320px;
+  }
+}
+
 </style>

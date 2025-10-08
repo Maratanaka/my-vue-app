@@ -86,6 +86,7 @@ export default {
   perspective: 1000px;
   text-align: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
 }
 
 .card {
